@@ -1,0 +1,163 @@
+/* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Doppio+One&family=Major+Mono+Display&display=swap');
+*{
+    margin: 0%;
+    border: none;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background: rgba(0, 0, 0, 0.85)url(./food\ blur\ bg.jpg);
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+span{
+    color: orangered;
+    font-weight: 600;
+}
+.title{
+    margin: 20px;
+    display: flex;
+    color: white;
+    width: fit-content;
+}
+.title h1{
+    text-shadow: 
+        0.025em 0.025em 0 rgb(159, 7, 58),
+        0.05em 0.05em 0 rgb(214, 214, 21),
+        0.075em 0.075em 0 rgb(211, 11, 11),
+        0.1em 0.1em 0 black;
+    letter-spacing: 3px;
+    width: fit-content;
+}
+.nav{
+    display: flex;
+}
+.options ul{
+    display: flex;
+    margin-top: 20px;
+}
+.options ul li {
+    list-style-type: none;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+.options ul li a{
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+.options ul li a:hover{
+    color: white;
+    background-color: orangered;
+}
+input{
+    padding: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-bottom-left-radius: 10px;
+    outline: none;
+    padding-right: 100px;
+}
+.search button{
+    padding: 10px;
+    float: right;
+    margin-top: 20px;
+    padding-right: 20px;
+    background-color: orangered;
+    border-top-right-radius: 10px;
+}
+.logout button{
+    margin-left: 40px;
+    margin-top: 20px;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.logout button:hover{
+    background-color: green;
+    color: white;
+}
+.dropdown{
+    width: 200px;
+    margin-left: 20px;
+}
+.dropdown-select{
+    background-color: white;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.icon{
+    float: right;
+}
+.option-list{
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 8px;
+    visibility: hidden;
+}
+.option-list.active{
+    visibility: visible;
+}
+.option{
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.option:hover{
+    background-color: #f2f2f2;
+}
+.scooter{
+    margin-top: 255px;
+}
+.scooter img{
+    width: 100px;
+    height: 60px;
+}
+@keyframes slide{
+    from{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    to{
+        opacity: 1.5;
+        transform: translateX(1500px);
+    }
+}
+.scooter img{
+    animation: slide 8s infinite linear;
+
+    transform: translateX(-150px);
+}
+h2{
+    color: white;
+}
+.admin{
+    margin-left: 50px;
+    margin-top: 20px;
+    font-family: 'Doppio One', sans-serif;
+}
+.admin select{
+    margin-top: 5px;
+    padding: 3px;
+    border-radius: 5px;
+    outline: none;
+    padding-right: 20px;
+    font-weight: 600;
+}
+p{
+    color: whitesmoke;
+    width: 750px;
+    margin-left: 280px;
+    position: absolute;
+    margin-top: -400px;
+    font-weight: 500;
+}
